@@ -11,6 +11,10 @@ class Welcome extends React.Component {
                 date: new Date() // 更新 date
             })  
         })
+        console.log('我已经在 constructor 里将 props 和 state 初始化好了')
+      }
+      componentWillMount(){
+        console.log('运行到这里的话，说明马上就要运行 render 了')
       }
   render() {
     return (
@@ -19,6 +23,9 @@ class Welcome extends React.Component {
           <h2>{this.state.date.toString()}</h2>
         </div>
       )  }
+  componentDidMount(){
+    console.log('已经挂载到页面里了')
+  }
 }
 
 export default Welcome // 为什么要 export，为什么要加 default
