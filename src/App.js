@@ -45,7 +45,7 @@ class App extends Component {
   }
   onSignUp(user){
     let stateCopy = JSON.parse(JSON.stringify(this.state))
-    stateCopy.user = 'user'
+    stateCopy.user = user
     this.setState(stateCopy)
   }
     componentDidUpdate(){
