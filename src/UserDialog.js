@@ -28,6 +28,9 @@ export default class UserDialog extends Component{
                 case 202:
                   alert('用户名已被占用')
                   break
+                case 201:
+                   alert('没有提供密码，或者密码为空')
+                   break
                 default:
                   alert(error)
                   break
@@ -46,6 +49,9 @@ export default class UserDialog extends Component{
                 case 210:
                   alert('用户名与密码不匹配')
                   break
+                case 211:
+                alert('找不到用户')
+                break
                 default:
                   alert(error)
                   break
