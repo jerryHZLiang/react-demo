@@ -5,7 +5,7 @@ import './reset.css';
 import TodoInput from './TodoInput';
 import TodoItem from './TodoItem';
 import UserDialog from './UserDialog'
-import {getCurrentUser, signOut} from './learnCloud'
+import {getCurrentUser, signOut} from './leanCloud'
 class App extends Component {
   constructor(props){
     super(props)
@@ -44,18 +44,13 @@ class App extends Component {
       {this.state.user.id ? 
         null : 
         <UserDialog 
-        onSignUp={this.onSignUp.bind(this)}
-        onSignIn={this.onSignIn.bind(this)}
+        onSignUp={this.onSignUpOrSignIn.bind(this)} 
+        onSignIn={this.onSignUpOrSignIn.bind(this)}/>}
         />}
       </div>
     )
   }
-  onSignUp(user){
-    let stateCopy = JSON.parse(JSON.stringify(this.state))
-    stateCopy.user = user
-    this.setState(stateCopy)
-  }
-  onSignIn(user){
+  onSignUpOrSignIn(user){
     let stateCopy = JSON.parse(JSON.stringify(this.state)) 
     stateCopy.user = user
     this.setState(stateCopy)
