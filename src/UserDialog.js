@@ -3,6 +3,7 @@ import './UserDialog.css';
 import {signUp, signIn, sendPasswordResetEmail} from './leanCloud';
 import SignInOrSignUp from './SignInOrSignUp'
 import ForgotPasswordForm from './ForgotPasswordForm'
+import logo from './img/lock-min.png';
 export default class UserDialog extends Component{
     constructor(props){
         super(props)
@@ -66,6 +67,7 @@ export default class UserDialog extends Component{
   render(){
     return (
       <div className="UserDialog-Wrapper">
+         <div className="logo"><img src={logo} alt="" width="318" height="196"/> </div>
         <div className="UserDialog">
         {
           this.state.selectedTab === 'signInOrSignUp' ?

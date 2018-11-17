@@ -1,8 +1,20 @@
 
 body{
-  background: #ddd;
+  background-image: url('./img/do-it-min.jpg');
+  background-size: cover; 
+}
+*{
+  letter-spacing: .25px;
+}
+h1{
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+button{
+  border-radius: 2px;
 }
 #root{
+ 
   display: flex;
   justify-content: center;
   min-height: 100vh;

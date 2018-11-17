@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  color: #333;
+  color: rgb(107, 107, 122);
   border: 1px solid #aaa;
   border-radius: 4px;
   background: white;
@@ -8,11 +8,33 @@
   padding: 0 1em;
   min-height: 20em;
   min-width: 32em;
-  box-shadow: 0 0 1em hsla(0,0%,0%,0.15);
+  box-shadow: 0 0 1em rgba(243, 241, 241, 0.15);
+  position: relative;
 }
 .App > .todoList> li:nth-child(odd){
-  background: #eee;
+  background: #d3d3d3;
 }
 .App > .todoList> li:nth-child(even){
   background: transparent;
+}
+
+.App > h1 > button{
+  text-align: center;
+  text-decoration: none;
+  box-shadow: inset 1px 1px 0 rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.07);
+  background: #5689db;
+  width: 100px;
+  height: 28px;
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+  border: none;
+  transition: 0.3s;
+  margin: auto;
+  right: 10px;
+  top: 27px;
+  cursor: pointer;
+  font-family: “Arial”,”Microsoft YaHei”,”黑体”,”宋体”,sans-serif;
+  padding: 2px;
+  position: absolute;
 }

@@ -1,0 +1,26 @@
+.TodoItem{
+    width: 100%;
+    line-height: 1.8;
+    margin-bottom: 1em;
+    font-size: 16px;
+    font-family: “Arial”,”Microsoft YaHei”,”黑体”,”宋体”;
+    padding: 0 .2em;
+    position: relative;
+}
+
+.TodoItem button{
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    font-family: “Arial”; 
+    line-height: 1;
+    padding-left: 1em; 
+    padding-right: 1em;
+    background: #5689db;
+    color: white;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.07);
+    border: none;
+    font-size: 12px;
+    margin-left: 10em;
+}
